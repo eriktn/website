@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- importo un font chiamato "fontawesome" -->
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Delta spa - website</title>
+</head>
+
+<body>
+    <header>
+        <!-- creo una sezione dove mettere il "logo" dell'azienda e i link ai social network -->
+        <div class="flex-container">
+            <div class="title">
+                <h1 class="delta">Delta Spa</h1>
+                <p class="p">| website</p>
+            </div>
+            <ul>
+                <!-- utilizzo il fontawesome per far visualizzare le icone dei social network  -->
+                <a class="icon" href="#"><i id="face" class="fab fa-facebook-square"></i></a>
+                <a class="icon" href="#"><i id="twit" class="fab fa-twitter-square"></i></a>
+                <a class="icon" href="#"><i id="linkedin" class="fab fa-linkedin"></i></a>
+            </ul>
+        </div>
+        <nav>
+            <!-- menù principale di navigazione(solo "logout" e "login" sono veri link) -->
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Chi siamo</li>
+                </a>
+                <a href="#">
+                    <li id="prod">Prodotti</li>
+                </a>
+                <a href="#">
+                    <li>Contattaci</li>
+                </a>
+                <a href="#">
+                    <li>Carriera</li>
+                </a>
+            </ul>
+            <div>
+                <a class="logout" href="login.html">Logout</a>
+                <a class="login" href="login.html">Accedi</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Inserisco un banner in cui mettere il nome, il logo e la descrizione dell'azienda -->
+    <div class="image">
+        <div class="txt">
+            <h1 class="header">Delta Spa</h1>
+            <p class="text">Leader nel settore della produzione di componenti in alluminio e ghisa per l’industria
+                automobilistica</p>
+        </div>
+
+        <img id="bg" src="delta.png" alt="">
+    </div>
+    <br><br><br><br>
+    <hr>
+    <main>
+        <!-- creo un menù laterale in grado di far mostrare le liste dei prodotti -->
+        <div class="sidebar">
+            <p>Categoria prodotti:</p> <!-- inserisco 6 input radio ciascuno delle quali corrisponde una categoria -->
+            <div><input type="radio" onClick="showimages(0)" name="prodotti" id="cerchioni" value="cerchioni" checked>
+                Cerchioni</div>
+            <div><input type="radio" onClick="showimages(1)" name="prodotti" id="scatola" value="scatola"> Scatola dello
+                sterzo</div>
+            <div><input type="radio" onClick="showimages(2)" name="prodotti" id="collettore" value="collettore">
+                Collettore aspirazione</div>
+            <div><input type="radio" onClick="showimages(3)" name="prodotti" id="basamento" value="basamento"> Basamento
+                motore</div>
+            <div><input type="radio" onClick="showimages(4)" name="prodotti" id="coppa" value="coppa"> Coppa dell'olio
+            </div>
+            <div><input type="radio" onClick="showimages(5)" name="prodotti" id="testata" value="testata"> Testata
+                motore</div>
+        </div>
+        <!-- Lista prodotti relativa ai cerchioni -->
+        <div class="images" style="display:grid">
+            <div class="polaroid">
+                <!-- effetto polaroid alle immagini dei prodotti -->
+                <img src="cerchio1.jpg" alt="">
+                <div class="container">
+                    <!-- descrizione prodotto-->
+                    <p>Cerchione Delta H100</p>
+                    <p class="rosso">Prezzo: €150</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="cerchio2.jpg" alt="">
+                <div class="container">
+                    <p>Cerchione Delta H101</p>
+                    <p class="rosso">Prezzo: €90</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="cerchio3.jpg" alt="">
+                <div class="container">
+                    <p>Cerchione Delta H102</p>
+                    <p class="rosso">Prezzo: €250</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="cerchio4.jpg" alt="">
+                <div class="container">
+                    <p>Cerchione Delta H103</p>
+                    <p class="rosso">Prezzo: €120</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="cerchio5.jpg" alt="">
+                <div class="container">
+                    <p>Cerchione Delta H104</p>
+                    <p class="rosso">Prezzo: €140</p>
+                </div>
+            </div>
+        </div>
+        <!-- Lista prodotti relativa alla scatola dello sterzo -->
+        <div class="images" style="display:none">
+            <div class="polaroid">
+                <img src="scatola1.png" alt="">
+                <div class="container">
+                    <p>Scatola Delta FI4001</p>
+                    <p class="rosso">Prezzo: €45</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="scatola2.jpg" alt="">
+                <div class="container">
+                    <p>Scatola Delta FI4002</p>
+                    <p class="rosso">Prezzo: €50</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="scatola3.jpg" alt="">
+                <div class="container">
+                    <p>Scatola Delta FI4003</p>
+                    <p class="rosso">Prezzo: €70</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="scatola4.jpg" alt="">
+                <div class="container">
+                    <p>Scatola Delta FI4004</p>
+                    <p class="rosso">Prezzo: €65</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Lista prodotti relativa ai collettori aspirazione -->
+        <div class="images" style="display:none">
+            <div class="polaroid">
+                <img src="collettore1.jpg" alt="">
+                <div class="container">
+                    <p>Collettore Delta XZ01</p>
+                    <p class="rosso">Prezzo: €170</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="collettore2.png" alt="">
+                <div class="container">
+                    <p>Collettore Delta XZ02</p>
+                    <p class="rosso">Prezzo: €250</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="collettore3.png" alt="">
+                <div class="container">
+                    <p>Collettore Delta XZ03</p>
+                    <p class="rosso">Prezzo: €145</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="collettore4.jpg" alt="">
+                <div class="container">
+                    <p>Collettore Delta XZ04</p>
+                    <p class="rosso">Prezzo: €453</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="collettore5.jpg" alt="">
+                <div class="container">
+                    <p>Collettore Delta XZ05</p>
+                    <p class="rosso">Prezzo: €376</p>
+                </div>
+            </div>
+        </div>
+        <!-- Lista prodotti relativa al basamento motore -->
+        <div class="images" style="display:none">
+            <div class="polaroid">
+                <img src="basamento1.jpg" alt="">
+                <div class="container">
+                    <p>Basamento Delta RV4500</p>
+                    <p class="rosso">Prezzo: €234</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="basamento2.jpg" alt="">
+                <div class="container">
+                    <p>Basamento Delta RV4501</p>
+                    <p class="rosso">Prezzo: €600</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="basamento3.png" alt="">
+                <div class="container">
+                    <p>Basamento Delta RV4502</p>
+                    <p class="rosso">Prezzo: €429</p>
+                </div>
+            </div>
+        </div>
+        <!-- Lista prodotti relativa alla coppa dell'olio -->
+        <div class="images" style="display:none">
+            <div class="polaroid">
+                <img src="coppa1.jpg" alt="">
+                <div class="container">
+                    <p>Coppa Delta 59013</p>
+                    <p class="rosso">Prezzo: €20</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="coppa2.jpeg" alt="">
+                <div class="container">
+                    <p>Coppa Delta 59013</p>
+                    <p class="rosso">Prezzo: €28</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="coppa3.jpeg" alt="">
+                <div class="container">
+                    <p>Coppa Delta 59013</p>
+                    <p class="rosso">Prezzo: €16</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="coppa4.jpg" alt="">
+                <div class="container">
+                    <p>Coppa Delta 59013</p>
+                    <p class="rosso">Prezzo: €32</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="coppa5.jpg" alt="">
+                <div class="container">
+                    <p>Coppa Delta 59013</p>
+                    <p class="rosso">Prezzo: €29</p>
+                </div>
+            </div>
+        </div>
+        <!-- Lista prodotti relativa alla testata motore -->
+        <div class="images" style="display:none">
+            <div class="polaroid">
+                <img src="testata1.jpg" alt="">
+                <div class="container">
+                    <p>Testata Delta modello X</p>
+                    <p class="rosso">Prezzo: €279</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="testata2.jpg" alt="">
+                <div class="container">
+                    <p>Testata Delta modello Y</p>
+                    <p class="rosso">Prezzo: €364</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="testata3.jpg" alt="">
+                <div class="container">
+                    <p>Testata Delta modello Z</p>
+                    <p class="rosso">Prezzo: €310</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br><br><br>
+    <script src="script.js"></script>
+</body>
+
+</html>

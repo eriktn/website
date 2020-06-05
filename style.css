@@ -1,0 +1,188 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bg {
+    transform: scale(1.5,1.5)
+}
+
+.rosso {
+    color: red;
+    font-weight: bold;
+}
+.txt {
+    text-align: center;
+    flex-basis: 40%;
+}
+.header {
+    background-color: rgb(3, 155, 155);
+    display: inline;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: white;
+}
+.image {
+    margin: auto;
+    padding: 0;
+    margin-top: 70px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    align-self: center;
+    margin-top: 20px;
+    color: rgb(146, 146, 146);
+
+    line-height: 2;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+#linkedin {
+    color: #007bb6;
+}
+#twit {
+    color:#00aced;
+}
+#face {
+    color: #3b5998;
+}
+i {
+    font-size: 26px;
+    margin: 0px 3px;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.p {
+    font-size: 14px;
+    color: rgb(194, 194, 194);
+}
+.delta {
+    margin-right: 10px;
+    color: rgb(48, 48, 48)
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51)
+}
+.login {
+    color: rgb(219, 219, 219);
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 50px;
+    border: 2px solid rgb(219, 219, 219);
+    padding: 6px;
+}
+.logout {
+    color: rgb(219, 219, 219);
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid rgb(219, 219, 219);
+    padding: 6px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+ul li {
+    padding: 10px;
+    color: rgb(219, 219, 219);
+    font-weight: 700;
+}
+.icon {
+    border: none;
+}
+ul a {
+    text-decoration: none;
+    border-right: 2px solid rgb(124, 124, 124);
+    margin: 2px 0px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+    margin: auto;
+}
+.sidebar {
+    width: 240px;
+    background: #eee;
+    height: 300px;
+    padding: 20px 0;
+    border: 2px solid gray;
+}
+
+
+#prod {
+    background-color: rgb(219, 219, 219);
+    color: rgb(51, 51, 51);
+}
+
+
+.sidebar p {
+    color: #2196F3;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.sidebar div {
+    margin: 15px 0px;
+    color: #2196F3;
+}
+main {
+    display: flex;
+    margin-top: 100px;
+}
+.images {
+    display: grid;
+    margin:auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px 50px;
+}
+.fadeiin {
+    animation: fadein 0.5s forwards;
+}
+
+.fadeoout {
+    animation: fadeout 0.5s forwards;
+}
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+@keyframes fadeout {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+
+
+div.images img {
+    width: 200px;
+    display: block;
+    height: 200px;
+    margin: auto;
+}
+div.polaroid {
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .fadein {
+      opacity: 0;
+  }
+  .fadeout {
+      opacity: 1;
+  }
